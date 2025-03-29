@@ -18,26 +18,30 @@
     <title>Porsche</title>
 </head>
 <body>
+    <div id="cursor-dot"><img src="images/porsche-title.png" alt="" style="width: 100%;"></div>
+    <div id="cursor-circle"></div>
+
+
     <div id="scroll-wheel-under-cover"></div>
     <div id="scroll-wheel"></div>
-    <button id="scroll-button"><i class="fa-solid fa-angles-up"></i></button>
+    <button id="scroll-button" class="pointer"><i class="fa-solid fa-angles-up"></i></button>
     <nav id="nav-bar">
         <img src="images/porsche.png" alt="porsche">
     
         <div id="navigations">
-            <a href="" class="nav" id="home"><button >HOME</button></a>
-            <a href="" class="nav" id="models"><button >MODELS</button></a>
-            <a href="" class="nav" id="services"><button >SERVICES</button></a>
-            <a href="" class="nav" id="contact"><button >CONTACT</button></a>
-            <button id="navigations-button"><i class="fa-solid fa-bars" id="open"></i><i class="fa-solid fa-x" id="close"></i></button>
+            <a href="" class="nav" id="home"><button class="pointer">HOME</button></a>
+            <a href="" class="nav" id="models"><button class="pointer">MODELS</button></a>
+            <a href="" class="nav" id="services"><button class="pointer">SERVICES</button></a>
+            <a href="" class="nav" id="contact"><button class="pointer">CONTACT</button></a>
+            <button id="navigations-button" class="pointer"><i class="fa-solid fa-bars" id="open"></i><i class="fa-solid fa-x" id="close"></i></button>
             
         </div>
 
         <div id="side-container">
-            <a href="" ><button >HOME</button></a>
-            <a href="" ><button >MODELS</button></a>
-            <a href="" ><button>SERVICES</button></a>
-            <a href="" ><button >CONTACT</button></a>
+            <a href="" ><button class="pointer">HOME</button></a>
+            <a href="" ><button class="pointer">MODELS</button></a>
+            <a href="" ><button class="pointer">SERVICES</button></a>
+            <a href="" ><button class="pointer">CONTACT</button></a>
             
         </div>
 
@@ -47,20 +51,22 @@
     <main id="main">
 
         <div id="background-video">
-            <video width="100%" autoplay loop>
+            <video width="100%" autoplay loop id="vid">
                 <source src="images/videoplayback (1).mp4" type="video/mp4">
             </video>
             <div id="video-discription">
                 <p>PERFORMANCE</p>
                 <p>POWER</p>
                 <p>SPORT.</p>
-                <a href=""><button>Discover The 911 GT Sereis</button></a>
+                <a href=""><button class="pointer">Discover The 911 GT Sereis</button></a>
             </div>
+            <button id="video-pause"  class="pointer"><i class="fa-solid fa-play" id="play"></i><i class="fa-solid fa-pause" id="pause"></i></button>
+
         </div>
         <div id="wrapper"> 
-            <button id="wrapper-shopping">SHOPPING</button>
-            <button id="wrapper-discover">DISCOVER</button>
-            <button id="wrapper-services">SERVICES</button>
+            <button id="wrapper-shopping" class="pointer">SHOPPING</button>
+            <button id="wrapper-discover"class="pointer">DISCOVER</button>
+            <button id="wrapper-services" class="pointer">SERVICES</button>
         </div>
 
 
@@ -70,13 +76,13 @@
             <div id="sport-718" class="model">
                 <div class="content">
                     <img src="images/718.avif" alt="">
-                    <a href=""><h1>718 Cayman</h1></a>
+                    <a href="" class="pointer"><h1>718 Cayman</h1></a>
                     <h3>From $72,800*</h3>
                 </div>
 
                 <div class="content">
                     <img src="images/718-2.avif" alt="">
-                    <a href=""><h1>718 Boxster</h1>
+                    <a href="" class="pointer"><h1>718 Boxster</h1>
                     </a>
                     <h3>From $74,900*</h3>
                 </div>
@@ -85,13 +91,13 @@
             <div id="sport-911" class="model">
                 <div class="content">
                     <img src="images/911-3.avif" alt="">
-                    <a href=""><h1>911 Carrera T</h1></a>
+                    <a href="" class="pointer"><h1>911 Carrera T</h1></a>
                     <h3>From $ 138,700*</h3>
                 </div>
 
                 <div class="content">
                     <img src="images/911-1.avif" alt="">
-                    <a href=""><h1>911 Carrera 4 GTS</h1></a>
+                    <a href="" class="pointer"><h1>911 Carrera 4 GTS</h1></a>
                     <h3>From $ 177,600*</h3>
                 </div>
             </div>
@@ -99,13 +105,13 @@
             <div id="suv-panamera" class="model">
                 <div class="content">
                     <img src="images/p1.avif" alt="">
-                    <a href=""><h1>Panamera</h1></a>
+                    <a href="" class="pointer"><h1>Panamera</h1></a>
                     <h3>From $ 106,300*</h3>
                 </div>
 
                 <div class="content">
                     <img src="images/p2.avif" alt="">
-                    <a href=""><h1>Panamera Turbo S E-Hybrid</h1></a>
+                    <a href="" class="pointer"><h1>Panamera Turbo S E-Hybrid</h1></a>
                     <h3>From $ 230,700*</h3>
                 </div>
             </div>
@@ -113,13 +119,13 @@
             <div id="suv-cayenne" class="model">
                 <div class="content">
                     <img src="images/c1.avif" alt="">
-                    <a href=""><h1>Cayenne</h1></a>
+                    <a href="" class="pointer"><h1>Cayenne</h1></a>
                     <h3>From $ 86,800*</h3>
                 </div>
 
                 <div class="content">
                     <img src="images/c2.avif" alt="">
-                    <a href=""><h1>Cayenne Turbo GT</h1></a>
+                    <a href="" class="pointer"><h1>Cayenne Turbo GT</h1></a>
                     <h3>From $ 205,900*</h3>
                 </div>
             </div>
@@ -132,7 +138,7 @@
                 <div class="discover-discription">
                     <h1>Drive Experiences</h1>
                     <p style="font-size: 1.2em;">Feel the performance of a Porsche from the driver’s seat.</p>
-                    <button><a href="">Learn More</a></button>
+                    <button class="pointer"><a href="">Learn More</a></button>
                 </div>
                 
             </div>
@@ -142,7 +148,7 @@
                 <div class="discover-discription">
                     <h1>Simulator Lab</h1>
                     <p style="font-size: 1.2em;">Choose your Porsche and take a virtual spin on tracks across the world.</p>
-                    <button><a href="">Learn More</a></button>
+                    <button class="pointer"><a href="">Learn More</a></button>
                 </div>
                 
             </div>
@@ -152,7 +158,7 @@
                 <div class="discover-discription">
                     <h1>Private + Corporate Events</h1>
                     <p style="font-size: 1.2em;">Give your special occasion or corporate event a truly unique setting.</p>
-                    <button><a href="">Learn More</a></button>
+                    <button class="pointer"><a href="">Learn More</a></button>
                 </div>
                 
             </div>
@@ -168,7 +174,7 @@
                 <pre>
             A Porsche Center, and your dream Porsche vehicle, may be closer than you think.
             Search our Porsche Center network for the location closest to you.</pre>
-                <a href=""><button>Search Now</button></a>
+                <a href=""><button  class="pointer">Search Now</button></a>
             </div>
             <img src="images/porsche-center-2.jpg" alt="">
         </div>
@@ -179,62 +185,63 @@
 
         
     </main>
-
-    <footer id="footer">
-        <!--
-        <div id="scrolling-container">
-            <div id="scrolling-discription">
-                <h1 id="first">1</h1>
-                <h1 id="socond">2</h1>    
-            </div>
-            <img src="images/porsche-event.jpg" alt="">
+    <div id="scrolling-container">
+        <div id="scrolling-discription">
+            <h1 id="first">1</h1>
+            <h1 id="socond">2</h1> 
+            <h1 id="third">3</h1>
         </div>
-    -->
+        <img src="images/porsche-event.jpg" alt="">
+    </div>
+    
+    <footer id="footer">
+            
+    
         <div id="main-footer">
             <div id="contact">
                 <h1>Social Media</h1>
                 <div id="social-media">
-                    <a href=""><button class="facebook"><i class="fa-brands fa-facebook-f"></i></button></a>
-                    <a href=""><button class="instagram"><i class="fa-brands fa-instagram"></i></button></a>
-                    <a href=""><button class="pinterest"><i class="fa-brands fa-pinterest-p"></i></button></a>
-                    <a href=""><button class="youtube"><i class="fa-brands fa-youtube"></i></button></a>
-                    <a href=""><button class="x"><i class="fa-brands fa-x-twitter"></i></button></a>
-                    <a href=""><button class="linkin"><i class="fa-brands fa-linkedin-in"></i></button></a>
+                    <a href=""><button class="pointer" class="facebook"><i class="fa-brands fa-facebook-f"></i></button></a>
+                    <a href=""><button class="pointer" class="instagram"><i class="fa-brands fa-instagram"></i></button></a>
+                    <a href=""><button class="pointer" class="pinterest"><i class="fa-brands fa-pinterest-p"></i></button></a>
+                    <a href=""><button class="pointer" class="youtube"><i class="fa-brands fa-youtube"></i></button></a>
+                    <a href=""><button class="pointer" class="x"><i class="fa-brands fa-x-twitter"></i></button></a>
+                    <a href=""><button class="pointer" class="linkin"><i class="fa-brands fa-linkedin-in"></i></button></a>
                 </div>
                 <h1>Contact Us</h1>
                 <div id="phone-email">
-                    <p>SALES: (+44) 1327355911</p>
-                    <p>SERVICES: (+44) 1327355911</p>
-                    <p>FAX: (+44) 1327 355 959</p>
-                    <p>EMAIL: <a href="">info@porschesilverstone.co.uk</a></p>
-                    <p>EMAIL: <a href="">customersupport@porsche.com</a></p>
+                    <p class="pointer">SALES: (+44) 1327355911</p>
+                    <p class="pointer">SERVICES: (+44) 1327355911</p>
+                    <p class="pointer">FAX: (+44) 1327 355 959</p>
+                    <p class="pointer">EMAIL: <a href="">info@porschesilverstone.co.uk</a></p>
+                    <p class="pointer">EMAIL: <a href="">customersupport@porsche.com</a></p>
                 </div>
             </div>
             <div id="company">
                 <h1>Company & Support</h1>
-                <p><a href="">Porsche Cars North America</a></p>
-                <p><a href="">Career</a></p>
-                <p><a href="">Compliance</a></p>
-                <p><a href="">Newsroom & Press</a></p>
-                <p><a href="">Sustainability</a></p>
+                <p class="pointer"><a href="">Porsche Cars North America</a></p>
+                <p class="pointer"><a href="">Career</a></p>
+                <p class="pointer"><a href="">Compliance</a></p>
+                <p class="pointer"><a href="">Newsroom & Press</a></p>
+                <p class="pointer"><a href="">Sustainability</a></p>
             </div>
 
             <div id="addresse">
                 <h1>Locations</h1>
-                <p style="width: 15em;"><a href=""><i class="fa-solid fa-location-dot"></i>
+                <p style="width: 15em;"  class="pointer"><a href=""><i class="fa-solid fa-location-dot"></i>
                 Zuffenhausen: Production, Sales and Marketing
                 Porscheplatz 1
                 70435 Stuttgart, Germany</a></p>
 
-                <p style="width: 15em;"><a href=""><i class="fa-solid fa-location-dot"></i>
+                <p style="width: 15em;" class="pointer"><a href=""><i class="fa-solid fa-location-dot"></i>
                     One Porsche Drive
 Atlanta, GA 30354, USA </a></p>
 
-                <p style="width: 15em;"><a href=""><i class="fa-solid fa-location-dot"></i>
+                <p style="width: 15em;" class="pointer"><a href=""><i class="fa-solid fa-location-dot"></i>
                     Lorenzstraße 16
 70435 Stuttgart, Germany</a></p>
 
-                <a href="" class="more-locations">GET IN TOUCH <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="" class="pointer" class="more-locations">GET IN TOUCH <i class="fa-solid fa-arrow-right"></i></a>
 
             </div>
         </div>

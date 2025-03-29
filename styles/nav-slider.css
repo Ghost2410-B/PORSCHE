@@ -22,7 +22,7 @@
     height: 3em;
     border: none;
     width: 100%;
-    cursor: pointer;
+    cursor: none;
     font-size: larger;
     font-style: italic;
     font-family: cursive;

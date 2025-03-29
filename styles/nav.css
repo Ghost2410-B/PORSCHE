@@ -42,7 +42,6 @@ nav #navigations button{
     background-color: transparent;
     color: aliceblue;
     border: none;
-    cursor: pointer;
     font-weight: 600;
     font-size: 1.1em;
     transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);

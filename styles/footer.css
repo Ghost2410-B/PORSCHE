@@ -54,7 +54,7 @@ body a{
     padding: 1em;   
     height: 4em;
     width: 4em;
-    cursor: pointer;
+    cursor: none;
     border: none;
     border-radius: 0.3em;
     transition: all 0.2s ease-in ;

@@ -87,3 +87,74 @@ nav_button.addEventListener("click",()=>{
     }
 });
 
+
+
+
+//video pause
+
+const pause=document.getElementById("video-pause");
+const video=document.getElementById("vid");
+
+let play=document.getElementById("play");
+let stp=document.getElementById("pause");
+
+play.style.display="none";
+
+pause.addEventListener("click",()=>{
+    if(video.paused){
+        video.play();
+        play.style.display="none";
+        stp.style.display="block";
+
+
+    }
+    else{
+        video.pause();
+        play.style.display="block";
+        stp.style.display="none";
+
+
+    }
+})
+
+
+
+
+//cursor
+const dot=document.getElementById("cursor-dot");
+const circle=document.getElementById("cursor-circle");
+
+
+window.addEventListener("mousemove",(e)=>{
+    const posx= e.clientX;
+    const posy= e.clientY;
+
+    dot.style.left=`${posx}px`;
+    dot.style.top=`${posy}px`;
+
+    circle.animate({
+        left:`${posx}px`,
+        top:`${posy}px`,
+    },{duration:500,fill:"forwards"});
+
+})
+
+
+
+///pointer cursor
+
+const pointer=document.querySelectorAll(".pointer");
+
+for(let i=0; i<pointer.length;i++){
+    pointer[i].addEventListener("mouseover",()=>{
+        dot.style.filter="blur(1px)";
+        circle.style="height: 3.5em;width: 3.5em;border:0.2em solid rgb(255, 255, 255);";
+    })
+
+    pointer[i].addEventListener("mouseout",()=>{
+        dot.style.filter="blur(0px)";
+        circle.style.border="0.2em solid rgb(0, 0, 67)";
+        circle.style="height: 3em;width: 3em;";
+
+    })
+}
