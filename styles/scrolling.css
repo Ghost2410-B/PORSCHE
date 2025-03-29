@@ -8,7 +8,7 @@
 }
 
 #scrolling-container{
-    height: 76vh;
+    height: 75vh;
     position: relative;
     justify-self: center;
     width: 88%;
@@ -25,6 +25,7 @@
     position: sticky;
     top: 0em;
     width: 60%;
+    height: 100%;
 
 }
 
