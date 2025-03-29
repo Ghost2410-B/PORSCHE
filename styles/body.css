@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+body::selection{
+    background-color: black;
+    color: aliceblue;
+}
+
+#scroll-wheel-under-cover{
+    background-color: black;
+    position: fixed;
+    height: 0.3em;
+    z-index: 99;
+    width: 100%;
+}
+#scroll-wheel{
+    background-color: rgb(255, 255, 255);
+    height: 0.3em;
+    width: 100%;
+    position: fixed;
+    width: 200%;
+    top: 0em;
+    left: -100%;
+    scale: 0 1;
+    z-index: 999;
+    animation: scroll-wheel linear ;
+    animation-timeline: scroll();
+}
+@keyframes scroll-wheel {
+    to{scale:1 1}
+    
+}
+
+
+#scroll-button{
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    right: 1.5em;
+    bottom: -7em;
+    border: none;
+    padding: 0.4em;
+    border-radius: 1em;
+    cursor: pointer;
+    z-index: 9999999;
+    transition: all 0.3s ease-in;
+    border: 4px solid transparent;
+    animation: pop-up 1s cubic-bezier(1, 0.02, 0.78, 2.33);
+    animation-direction: alternate;
+    animation-timeline: scroll();
+}
+
+@keyframes pop-up {
+    to{transform: translateY(-15em);}
+    
+}
+
+
+
+#scroll-button:hover{
+    background-color: transparent;
+    border: 4px solid black;
+    color: black;
+
+}
+
+
+#scroll-button:hover i{
+    animation: slow-jump 1s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+#scroll-button i{
+    font-size: 3em;
+}
+
+@keyframes slow-jump {
+    from{transform: translateY(0);}
+    to{transform: translateY(0.2em);}
+}

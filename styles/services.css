@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#services-container{
+    width: 88%;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    overflow-X: hidden;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+
+#services-container h1{    
+    font-size: 2em;
+}
+
+
+
+#services-container>img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+
+#services-discription{
+    background-image: linear-gradient(to top,black,rgba(255, 255, 255, 0));
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: 83em;
+    position: absolute;
+    left: 0em;
+    bottom: 0em;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5em;
+
+}
+
+#services-discription:hover{
+    background-image: linear-gradient(to top,black,rgba(255, 255, 255, 0.257));
+}
+
+#services-discription h2{
+    font-size: 2.6em;
+    color: aliceblue;
+
+}
+
+#services-discription pre{
+    color: aliceblue;
+    font-size: 1.2em;
+}
+
+
+#services-discription button{
+    color: black;
+    border: none;
+    background-color: aliceblue;
+    padding: 1em;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#services-discription button:hover{
+    color: aliceblue;
+    background-color: black;
+}
+
+
+
+

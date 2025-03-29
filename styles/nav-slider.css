@@ -1,0 +1,53 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+
+#side-container{
+    position: fixed;
+    background-color:aliceblue;
+    top: 5.8em;
+    right: -35em;
+    transition: transform 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    gap: 0.2em;
+    width: 40vw;
+}
+
+
+#side-container button{
+    height: 3em;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: larger;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 0.4em;
+    transition: all 0.2s ease-in-out;
+}
+
+#side-container button:hover{
+    background-color:darkgray;
+    color: black;
+    transform: scale(102%);
+
+}
+
+
+
+
+/*
+main,footer,#scroll-button{
+    filter: blur(10px);
+}
+
+#navigations{
+    filter:blur(0px);
+}*/
