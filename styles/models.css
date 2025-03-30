@@ -58,8 +58,8 @@
 .model .content h1{    font-size: 2em;
 }
 .model .content h1,h3{
-    color: aliceblue;
+    opacity: 100%;
+    color: rgb(255, 255, 255);
     margin-top: 0.5em;
-
 }
 
