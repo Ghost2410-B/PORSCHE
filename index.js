@@ -67,9 +67,9 @@ let display=false;
 nav_button.addEventListener("click",()=>{
     if(display===false){
         nav_slider.style.transform="translateX(-35em)";
-        main.style.filter="blur(40px)";
-        footer.style.filter="blur(40px)";
-        scroll_button.style.filter="blur(40px)";
+        main.style.filter="blur(20px)";
+        footer.style.filter="blur(20px)";
+        scroll_button.style.filter="blur(20px)";
         opn.style.display="none";
         cls.style.display="block";
         hide();

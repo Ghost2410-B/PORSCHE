@@ -133,8 +133,8 @@ body::selection{
 
 #cursor-circle,#cursor-dot{
     position: fixed;
-    top: 10em;
-    left: 2em;
+    top: 50vh;
+    left:50vw;
     transform: translate(-50%,-50%);
     border-radius: 50%;
     z-index: 999999999999;
